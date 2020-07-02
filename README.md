@@ -1,5 +1,3 @@
-Change 1
-
 # Web 1 Workbook
 This repo provides a template for your Course Workbook which houses all of your work for the course. This will not only keep you organized, but will be what you publish each week for review and grading purposes.
 

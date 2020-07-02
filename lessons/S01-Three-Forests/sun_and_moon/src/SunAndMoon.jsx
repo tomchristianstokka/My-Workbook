@@ -1,9 +1,9 @@
 import React from 'react';
 
-const SunAndMoon = () => {
+const SunAndMoon = ({whichImage}) => {
     return (
-        <img src="/images/sun.png" alt="Sun and moon"/>
+        <img src={ whichImage} alt="Sun and moon"/>
     );
 }
 
-export default SunAndMoon
+export default SunAndMoon;
