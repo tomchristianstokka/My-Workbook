@@ -4,9 +4,9 @@ import styled from 'styled-components';
 const Nav = () => {
     return (
         <NavStyled>
-        <div className='nested-wrapper' >
-            My navigation    
-        </div>   
+            <div className='nested-wrapper' >
+                My navigation    
+            </div>   
         </NavStyled>
     );
 }

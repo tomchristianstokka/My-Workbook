@@ -24,7 +24,6 @@ const AppStyled = styled.div`
     .nested-wrapper {
         max-width: 1200px;
         margin: auto;
-
         outline: solid black 1px;
     }
 `;

@@ -5,7 +5,7 @@ const Main = () => {
     return (
         <MainStyled>
             <div className='nested-wrapper'>
-                <h1>Page Title</h1>
+                Page Title
             </div>
         </MainStyled>
     );
@@ -14,7 +14,5 @@ const Main = () => {
 export default Main;
 
 const MainStyled = styled.main`
-    h1 {
         font-size: 75px;
-    }
 `;
