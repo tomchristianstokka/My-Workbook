@@ -1,0 +1,8 @@
+Essay 1: Explain the difference between HTML, CSS and JS.
+
+HTML: Stands for HyperText Markup Language, and is used as standardized language for web browsers and creating website.
+HyperText 
+It's essentially the most common language that a web browser reads and understands on the Internet.
+HTML deals with the structure of a website which means marking up text of code to give the browser instructions about how to render a web page. 
+The foundation of HTML are based Tags and Attributes.
+HTML Tags are used to mark up
