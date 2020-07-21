@@ -12,16 +12,16 @@ const Footer = () => {
         see
     */
 
-    const myVariable = 'I went to the park'
+    const myVariable = 'Hey wassup'
     const anotherOne = 123;
     console.log(myVariable, anotherOne);
 
-    const timbuktu = () => {
+    const random = () => {
         // Actions to execute
-        console.log('Executing timbuktu');
+        console.log('Executing random');
     }
 
-    timbuktu();
+    random();
 
     return (
         <FooterStyled>
