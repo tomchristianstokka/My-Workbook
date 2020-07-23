@@ -24,5 +24,4 @@ export default Main;
 
 const MainStyled = styled.main`
     padding: 50px;
-    font-size: 75px;
 `;
