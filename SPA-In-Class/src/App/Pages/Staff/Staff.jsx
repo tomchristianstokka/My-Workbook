@@ -28,9 +28,16 @@ const Staff = () => {
 export default Staff;
 
 const StaffStyled = styled.div`
+    background-color: teal;
+
     .members{
         display: flex;
         flex-wrap: wrap;
+        justify-content: flex-end;
+        justify-content: flex-start;
+        justify-content: space-between;
+        justify-content: space-around;
+        justify-content: center;
     }
     
 `;
