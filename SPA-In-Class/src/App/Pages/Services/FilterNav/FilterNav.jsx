@@ -4,13 +4,18 @@ import styled from 'styled-components';
 /* Components ---------------------------*/
 import FilterNavButton from './FilterNavButton.jsx';
 
-const FilterNav = ({ services, currCategory }) => {
+const FilterNav = ({ services, currCategory, currCategorySet }) => {
 
     console.log('FilterNav: ', services, currCategory);
 
     const renderButtons = () => {
         return services.categories.map((name, idx) => {
-            return <FilterNavButton key={ idx } name={ name } />
+            return <FilterNavButton 
+                        key={ idx } 
+                        name={ name } 
+                        currCategory={ currCategory }
+                        currCategorySet={ currCategorySet }
+                    />
         });
     }
 
@@ -24,5 +29,5 @@ const FilterNav = ({ services, currCategory }) => {
 export default FilterNav;
 
 const FilterNavStyled = styled.div`
-    
+    text-align: center;
 `;

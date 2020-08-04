@@ -16,7 +16,12 @@ const ServicesContainer = () => {
 
     return (
         <ServicesContainerStyled className='ServicesContainer'>
-            <FilterNav services={ services} currCategory={ currCategory}/>
+            <FilterNav 
+                services={ services}
+                currCategory={ currCategory}
+                currCategorySet={ currCategorySet } 
+            />
+
             <Gallery services={ services} currCategory={ currCategory}/>
         </ServicesContainerStyled>
     );
