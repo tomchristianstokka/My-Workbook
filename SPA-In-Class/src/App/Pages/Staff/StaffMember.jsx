@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 import { mq } from '../../../common/mediaQueries.js';
 
-import Lightbox from '../Services/Gallery/Lightbox.jsx';
+import Lightbox from '../../../common/Lightbox.jsx';
 
 const StaffMember = ({member}) => {
 
@@ -26,8 +26,9 @@ const StaffMember = ({member}) => {
             />
             <div className='title'>{ member.name }</div>
 
-            <Lightbox show={ showLBox } hideAction={ turnOff }>
+            <Lightbox show={ showLBox } hideAction={ turnOff } width={ 200 }>
                 <img src={ member.image } alt={ member.name }/>
+                <div className='title'>{ member.name }</div>
             </Lightbox>
         </StaffMemberStyled>
     );
@@ -57,5 +58,11 @@ const StaffMemberStyled = styled.div`
         background-color: maroon;
         color: white;
         padding: 5px;
+    }
+
+    .Lightbox {
+        .title {
+            background-color: teal;
+        }
     }
 `;
