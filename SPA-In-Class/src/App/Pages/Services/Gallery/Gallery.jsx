@@ -14,7 +14,7 @@ const Gallery = ({ services, currCategory }) => {
                 return (currCategory === 'All' || item.category === currCategory);
             })
             .map((item, idx) => {
-            return <GalleryItem key={ idx } item={ item } />;
+                return <GalleryItem key={ idx } item={ item } />;
         });
     }
 

@@ -13,7 +13,6 @@ const ContactForm = () => {
                 <FormGroup id={ 'userEmail' } label={ 'Email' }/>
                 <FormGroup id={ 'userMessage' } label={ 'Message' }/>
             </form>
-        
         </ContactFormStyled>
     );
 }

@@ -15,7 +15,7 @@ const Contact = () => {
             <Helmet>
                 <title>Contact :: SPA App</title>
             </Helmet>
-            <div className='nested wrapper'>
+            <div className='nested-wrapper'>
                 <div className='column column1'>
                     <Deets />
                 </div>

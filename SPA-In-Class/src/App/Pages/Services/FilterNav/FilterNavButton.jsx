@@ -9,7 +9,6 @@ const FilterNavButton = ({name, currCategory, currCategorySet }) => {
         currCategorySet(name);
     }
 
-
     const theClassName = (name === currCategory) ? 'FilterNavButton active': 'FilterNavButton';
 
     return (
