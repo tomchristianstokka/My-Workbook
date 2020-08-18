@@ -72,7 +72,6 @@ const ContactForm = () => {
             newField.validate.message = ``;
         }
     
-
         if (formField.id === 'userName') {
             userNameUpdate(newField);
         }
@@ -88,7 +87,7 @@ const ContactForm = () => {
         event.preventDefault();
         console.log('Captured Form Submit, we will take it from here');
 
-        if (userName.validate.valid === true && userEmail.validate.valid === true ) {
+        if (userName.validate.valid === true && userEmail.validate.valid === true) {
             console.log('Valid Submitting form');
 
             // .. AJAX goes here: aka AXIOS

@@ -37,7 +37,6 @@ const FormGroupStyled = styled.div`
             font-size: 18px;
             padding: 5px;
         }
-
         textarea {
             height: 200px;
         }
