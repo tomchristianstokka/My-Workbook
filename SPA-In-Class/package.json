@@ -29,7 +29,7 @@
         "react-helmet": "^5.2.1",
         "react-responsive-carousel": "^3.2.9"
     },
-    "homepage": "https://spa-finished.herokuapp.com",
+    "homepage": "https://ucla-tom-spa.herokuapp.com",
     "heroku-run-build-script": true,
     "scripts": {
         "start": "NODE_ENV=production node express.js",
@@ -54,3 +54,4 @@
         ]
     }
 }
+

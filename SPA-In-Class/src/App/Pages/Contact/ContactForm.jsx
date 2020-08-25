@@ -97,7 +97,7 @@ const ContactForm = () => {
                 userMessage: userMessage,
             }
             
-            API.post('/sendEmail', postData).then((result) => {
+            API.post('http://localhost:5000/api/email/send', postData).then((result) => {
                 console.log('result', result);
             });
         }

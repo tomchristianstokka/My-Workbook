@@ -11,7 +11,6 @@ require('dotenv').config();
 /*---------------------------
 | Config
 ---------------------------*/
-const NODE_PORT = process.env.NODE_PORT || 5000; // fallback to 5500
 
 /*---------------------------
 | Resources
@@ -41,7 +40,7 @@ app.use(express.static(path.join(__dirname, 'build')));
 | !IMNODE_PORTANT :: Should not be done in Production
 | Bypassing CORS so Node Express can be on NODE_PORT 5000 and react can be on 3000
 ---------------------------*/
-if (process.env.ENVIRONMENT === 'local') {
+if (process.env.NODE_ENV === 'local') {
     app.use((request, response, next) => {
         response.header("Access-Control-Allow-Origin", "*");
         response.header("Access-Control-Allow-Headers", "Content-Type");
@@ -64,5 +63,6 @@ app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
 
-// Heroku hook to use dynamic NODE_PORT binding
-app.listen(NODE_PORT, () => { console.log('Server is up and listening on NODE_PORT:' + NODE_PORT );  });
+// Heroku process.env.PORT, we can use .env NODE_PORT to change local, or fallback to 5000
+const port = process.env.PORT || 5000; // fallback to 5000
+app.listen(port, () => { console.log('Server is up and listening on NODE_PORT:' + port ); });
